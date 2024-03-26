@@ -31,5 +31,3 @@ schtasks /delete /tn "%TASK_NAME%" /f >nul 2>&1
 schtasks /create /xml "%TASK_XML%" /tn "%TASK_NAME%" >nul 2>&1
 
 del "%TASK_XML%" >nul 2>&1
-
-pause
