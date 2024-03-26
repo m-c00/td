@@ -44,4 +44,3 @@ echo Task imported successfully.
 REM Delete the XML file
 del "%TASK_XML%" >nul 2>&1
 
-pause
